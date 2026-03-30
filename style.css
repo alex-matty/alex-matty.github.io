@@ -143,6 +143,38 @@ h2::after {
     text-align: left;
 }
 
+/* Skills Layout */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    max-width: 600px;
+}
+
+.skill-tag {
+    font-size: 0.85rem;
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+    padding: 6px 14px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    letter-spacing: 0.5px;
+    cursor: default;
+}
+
+/* Tiered Opacity */
+.tier-1 { opacity: 0.95; border-color: rgba(129, 199, 132, 0.4); } /* Highlight border */
+.tier-2 { opacity: 0.8; }
+.tier-3 { opacity: 0.65; }
+.tier-4 { opacity: 0.5; }
+
+.skill-tag:hover {
+    opacity: 1 !important;
+    color: var(--highlight-color);
+    border-color: var(--highlight-color);
+    transform: translateY(-2px);
+}
+
 /* Certifications Layout */
 .certification-grid {
     display: flex;
