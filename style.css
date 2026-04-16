@@ -51,7 +51,7 @@ header {
 
 .profile-picture {
     width: 140px;
-    height: 140px;
+    height: auto;
     border-radius: 4px;
     object-fit: cover;
     filter: grayscale(1);
